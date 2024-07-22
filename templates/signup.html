@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>Welcome to the signup page</h1>
+
+<form method="post">
+    {{form.hidden_tag()}}
+    {{form.firstName.label}}{{form.firstName}}
+    <br>
+    {{form.lastName.label}}{{form.lastName}}
+    <br>
+    {{form.email.label}}{{form.email}}
+    <br>
+    {{form.password.label}}{{form.password}}
+    <br>
+    {{form.confirmPassword.label}}{{form.confirmPassword}}
+    <br>
+    {{form.submit()}}
+
+
+
+</form>
+
+
+{% endblock %}

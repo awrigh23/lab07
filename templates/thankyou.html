@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>Thank you please check your informaiton below</h1>
+
+<ul>
+    <li>FirstName : {{session['firstName']}}</li>
+    <li>LastName : {{session['lastName']}}</li>
+    <li>Email Adress: : {{session['email']}}</li>
+    <li>password : {{session['password']}}</li>
+    <li>confirm password : {{session['confirmPassword']}}</li>
+</ul>
+
+
+{% endblock %}
